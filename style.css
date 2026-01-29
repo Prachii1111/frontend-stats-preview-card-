@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 10px;
+}
+
+.card-container {
+    max-width: 21.875rem;
+    background-color: #1c1938;
+    color: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    width: 17.1875rem;
+    text-align: center;
+    font-size: 1.90rem;
+}
+
+h1 span {
+    color: #9d6ad2;
+}
+
+p {
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(187, 187, 188);
+}
+
+.info {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list {
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bold {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* desktop design  */
+
+@media(min-width: 48rem) {
+    .card-container {
+        max-width: 62.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    picture {
+        flex: 1;
+        order: 2;
+    }
+
+    picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        flex: 1;
+        align-items: flex-start;
+        padding: 50px;
+        order: 1;
+        gap: 30px;
+    }
+
+    h1, p {
+        width: auto;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 1.90rem;
+    }
+
+    h1 span {
+        color: #9d6ad2;
+    }
+
+    p {
+        max-width: 26.25rem;
+        text-align: left;
+        font-size: 0.95rem;
+        color: rgb(187, 187, 188);
+    }
+
+
+    .info {
+        flex-direction: row;
+        gap: 60px;
+        font-size: 0.80rem;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    .bold {
+        font-size: 1.20rem;
+    }
+
+    .list {
+        align-items: flex-start;
+    }
+
+}
